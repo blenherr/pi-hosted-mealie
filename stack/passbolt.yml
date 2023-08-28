@@ -58,7 +58,7 @@ services:
 networks:
   passbolt_default:
       name: passbolt
-      driver: custom-driver-1
+      driver: bridge
   
 volumes:
   gpg_volume:
