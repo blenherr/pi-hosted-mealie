@@ -57,6 +57,7 @@ services:
 
 networks:
   passbolt:
+      name: passbolt
   
 volumes:
   gpg_volume:
