@@ -15,7 +15,7 @@ services:
       - passbolt
     restart: unless-stopped
     volumes:
-      - /portainer/Files/AppData/Config/passbolt/mariadb:/config
+      - /portainer/Files/AppData/Config/passbolt:/config
 
   passbolt:
     container_name: passbolt
