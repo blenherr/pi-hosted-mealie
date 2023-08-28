@@ -24,7 +24,7 @@
 					"name": "TZ"
 				},
 				{
-					"default": "wfNJYSFmqTj3",
+					"default": "",
 					"label": "MariaDB root password",
 					"name": "MYSQL_ROOT_PASSWORD"
 				},
@@ -39,7 +39,7 @@
 					"name": "MYSQL_USER"
 				},
 				{
-					"default": "J5cT92cjAErz",
+					"default": "",
 					"label": "Passbolt database password",
 					"name": "MYSQL_PASSWORD"
 				},
