@@ -1,0 +1,70 @@
+{
+	"version": "2",
+	"templates": [
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Passbolt is a free and open source password manager designed for collaboration. With Passbolt you can securely generate, store, manage and monitor your team credentials. Get access to all of your logins and passwords from multiple browsers or even your mobile phone.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "MariaDB PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "MariaDB PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "Europe/Zurich",
+					"label": "MariaDB timezone",
+					"name": "TZ"
+				},
+				{
+					"default": "wfNJYSFmqTj3",
+					"label": "MariaDB root password",
+					"name": "MYSQL_ROOT_PASSWORD"
+				},
+				{
+					"default": "passbolt",
+					"label": "Passbolt database",
+					"name": "MYSQL_DATABASE"
+				},
+				{
+					"default": "passbolt",
+					"label": "Passbolt database user",
+					"name": "MYSQL_USER"
+				},
+				{
+					"default": "J5cT92cjAErz",
+					"label": "Passbolt database password",
+					"name": "MYSQL_PASSWORD"
+				},
+				{
+					"default": "https://passbolt.mydomain.com",
+					"label": "Passbolt full HTTPS base URL",
+					"name": "APP_FULL_BASE_URL"
+				},
+				{
+					"default": "443",
+					"label": "Passbolt HTTPS port",
+					"name": "PASSBOLT_PORT"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-test/master/images/passbolt.png",
+			"name": "Passbolt",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "stack/passbolt.yml",
+				"url": "https://github.com/blenherr/pi-hosted-test"
+			},
+			"restart_policy": "unless-stopped",
+			"title": "Passbolt",
+			"type": 3,
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md</a><br><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/docs/rpi_docker_monitor.md\" target=\"_blank\">rpi_docker_monitor.md</a></h3><br><br><h3><b><a href=\"https://github.com/pi-hosted/pi-hosted/blob/master/tools/rpi_docker_monitor.sh\" target=\"_blank\">Pre-installation script</a> must be RAN before you install: </b>wget -qO- https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/tools/rpi_docker_monitor.sh | bash</h3><br><br><b>Youtube Video: </b><a href=https://www.youtube.com/watch?v=IoD3vFuep64&list=PL846hFPMqg3jwkxcScD1xw2bKXrJVvarc&index=8 target=\"_blank\">Novaspirit Tech - Raspberry Pi Docker Monitoring</a><br><br>"
+		}
+	]
+}
