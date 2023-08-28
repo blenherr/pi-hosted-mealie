@@ -30,7 +30,7 @@
 				},
 				{
 					"default": "passbolt",
-					"label": "Passbolt database",
+					"label": "Passbolt database name",
 					"name": "MYSQL_DATABASE"
 				},
 				{
@@ -44,7 +44,7 @@
 					"name": "MYSQL_PASSWORD"
 				},
 				{
-					"default": "https://passbolt.mydomain.com",
+					"default": "https://passbolt.local",
 					"label": "Passbolt full HTTPS base URL",
 					"name": "APP_FULL_BASE_URL"
 				},
