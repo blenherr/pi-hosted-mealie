@@ -15,7 +15,7 @@ services:
       - passbolt_default
     restart: unless-stopped
     volumes:
-      - /portainer/Files/AppData/Config/passbolt:/config
+      - /portainer/Files/AppData/Config/passbolt/db:/config
 
   passbolt:
     container_name: passbolt
@@ -47,14 +47,16 @@ services:
       - ${PASSBOLT_PORT}:443
     restart: unless-stopped
     volumes:
-      - gpg:/etc/passbolt/gpg
-      - jwt:/etc/passbolt/jwt
+      - /portainer/Files/AppData/Config/passbolt/certs/cert.pem:/etc/ssl/certs/certificate.crt
+      - /portainer/Files/AppData/Config/passbolt/certs/key.pem:/etc/ssl/certs/certificate.key
+      #- gpg:/etc/passbolt/gpg
+      #- jwt:/etc/passbolt/jwt
 
 networks:
   passbolt_default:
       name: passbolt
       driver: bridge
   
-volumes:
-  gpg:
-  jwt:
+#volumes:
+#  gpg:
+#  jwt:
