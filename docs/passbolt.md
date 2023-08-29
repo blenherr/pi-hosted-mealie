@@ -45,4 +45,4 @@ Copy and paste the url above in browser. Proceed with `Welcome to Passbolt, plea
 You may have to install Passbolt browser add-on.
 
 ## After admin user activation
-Configure Email server by clicking on administration
+Configure the email server by clicking on administration
