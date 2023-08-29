@@ -48,14 +48,14 @@ services:
     restart: unless-stopped
     volumes:
       - /portainer/Files/AppData/Config/passbolt/certs:/etc/passbolt/certs
-      - /portainer/Files/AppData/Config/passbolt/gpg:/etc/passbolt/gpg
-      - /portainer/Files/AppData/Config/passbolt/jwt:/etc/passbolt/jwt
+      - gpg:/etc/passbolt/gpg
+      - jwt:/etc/passbolt/jwt
 
 networks:
   passbolt_default:
       name: passbolt
       driver: bridge
   
-#volumes:
-#  gpg:
-#  jwt:
+volumes:
+  gpg:
+  jwt:
