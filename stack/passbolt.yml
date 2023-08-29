@@ -47,7 +47,7 @@ services:
       - ${PASSBOLT_PORT}:4433
     restart: unless-stopped
     volumes:
-      - /portainer/Files/AppData/Config/passbolt/certs:/etc/passbolt/certs:rw
+      - /portainer/Files/AppData/Config/passbolt/certs:/etc/passbolt/certs
       - gpg:/etc/passbolt/gpg
       - jwt:/etc/passbolt/jwt
 
