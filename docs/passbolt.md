@@ -2,7 +2,7 @@
 
 ## Introduction
 
- is an open source password manager with ![MariaDB](https://mariadb.com) backend. 
+![Passbolt](https://www.passbolt.com) is an open source password manager with ![MariaDB](https://mariadb.com) backend. 
 
 # Installation
 
