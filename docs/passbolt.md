@@ -9,15 +9,15 @@
 ## Install the App Template.
 
 Goto App Templates and click on "Passbolt". Change Configuration to your needs:
-- MariaDB PUID (PUID of your user)
-- MariaDB PGID (PGID of your user)
-- MariaDB Timezone ([Timezone list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones))
-- MariaDB root password (Choose a password)
-- Passbolt database name (Choose a name)
-- Passbolt database user (Choose a user)
-- Passbolt database password (Choose a password)
-- Passbolt full HTTPS base URL (Full https base URL including port if differs to 443)
-- Passbolt HTTPS port (Choose a port)
+- **PUID** (Enter your user's PUID here)
+- **PGID** (Enter your user's PGID here)
+- **TZ** (Enter your time zone here. See examples [here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones))
+- **MYSQL_ROOT_PASSWORD** (Enter your MySql root password here)
+- **MYSQL_DATABASE** (Enter your Passbolt database name here)
+- **MYSQL_USER** (Enter your Passbolt database user here)
+- **MYSQL_PASSWORD** (Enter your Passbolt database password here)
+- **APP_FULL_BASE_URL** (Enter your full Passbolt https base URL here. Including port if different from 443)
+- **PASSBOLT_PORT** (Enter your Passbolt https port here)
 
 ## Setup Passbolt admin user
 
