@@ -22,7 +22,7 @@
 				},
 				{
 					"default": "Europe/Zurich",
-					"description": "Enter your time zone here (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)",
+					"description": "Enter your time zone here. See examples https://en.wikipedia.org/wiki/List_of_tz_database_time_zones",
 					"label": "TZ",
 					"name": "TZ"
 				},
@@ -52,7 +52,7 @@
 				},
 				{
 					"default": "https://passbolt.local",
-					"description": "Enter your full Passbolt https base URL here (Including port if different from 443)",
+					"description": "Enter your full Passbolt https base URL here. Including port if different from 443",
 					"label": "APP_FULL_BASE_URL",
 					"name": "APP_FULL_BASE_URL"
 				},
