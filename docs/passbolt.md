@@ -2,7 +2,7 @@
 
 ## Introduction
 
-![Passbolt](https://www.passbolt.com) is an open source password manager with ![MariaDB](https://mariadb.com) backend. 
+[Passbolt](https://www.passbolt.com) is an open source password manager with [MariaDB](https://mariadb.com) backend. 
 
 # Installation
 
@@ -11,7 +11,7 @@
 Goto App Templates and click on "Passbolt". Change Configuration to your needs:
 - MariaDB PUID (PUID of your user)
 - MariaDB PGID (PGID of your user)
-- MariaDB Timezone (![Timezone list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones))
+- MariaDB Timezone ([Timezone list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones))
 - MariaDB root password (Choose a password)
 - Passbolt database name (Choose a name)
 - Passbolt database user (Choose a user)
