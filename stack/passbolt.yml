@@ -47,11 +47,11 @@ services:
       - ${PASSBOLT_PORT}:443
     restart: unless-stopped
     volumes:
-      - /portainer/Files/AppData/Config/passbolt/certs:/etc/ssl/certs
-      #- /portainer/Files/AppData/Config/passbolt/certs/certificate.crt:/etc/ssl/certs/certificate.crt
-      #- /portainer/Files/AppData/Config/passbolt/certs/certificate.key:/etc/ssl/certs/certificate.key
-      #- /portainer/Files/AppData/Config/passbolt/certs/key.pem:/etc/ssl/certs/key.pem:ro
-      #- /portainer/Files/AppData/Config/passbolt/certs/cert.pem:/etc/ssl/certs/cert.pem:ro
+      #- /portainer/Files/AppData/Config/passbolt/certs:/etc/ssl/certs
+      - ./certs/certificate.crt:/etc/ssl/certs/certificate.crt:ro
+      - ./certs/certificate.key:/etc/ssl/certs/certificate.key:ro
+      - ./certs/key.pem:/etc/ssl/certs/key.pem:ro
+      - ./certs/cert.pem:/etc/ssl/certs/cert.pem:ro
       - gpg:/etc/passbolt/gpg
       - jwt:/etc/passbolt/jwt
 
