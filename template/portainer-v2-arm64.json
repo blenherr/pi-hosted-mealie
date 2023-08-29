@@ -28,7 +28,7 @@
 				},
 				{
 					"default": "",
-					"description": "Enter your MariaDB root password here",
+					"description": "Enter your MySql root password here",
 					"label": "MYSQL_ROOT_PASSWORD",
 					"name": "MYSQL_ROOT_PASSWORD"
 				},
