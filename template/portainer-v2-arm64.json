@@ -54,17 +54,17 @@
 					"name": "PASSBOLT_PORT"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-test/master/images/passbolt.png",
+			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-passbolt/master/images/passbolt.png",
 			"name": "Passbolt",
 			"platform": "linux",
 			"repository": {
 				"stackfile": "stack/passbolt.yml",
-				"url": "https://github.com/blenherr/pi-hosted-test"
+				"url": "https://github.com/blenherr/pi-hosted-passbolt"
 			},
 			"restart_policy": "unless-stopped",
 			"title": "Passbolt",
 			"type": 3,
-			"note": "<p><b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/blenherr/pi-hosted-test/blob/master/docs/passbolt.md\" target=\"_blank\">https://github.com/blenherr/pi-hosted-test/blob/master/docs/passbolt.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/blenherr/pi-hosted-test/blob/master/docs/passbolt.md\" target=\"_blank\">https://github.com/blenherr/pi-hosted-test/blob/master/docs/passbolt.md</a></p><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/blenherr/pi-hosted-test/blob/master/docs/passbolt.md\" target=\"_blank\">passbolt.md</a></h3><p><br><br></p>"
+			"note": "<p><b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md\" target=\"_blank\">https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md\" target=\"_blank\">https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md</a></p><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md\" target=\"_blank\">passbolt.md</a></h3><p><br><br></p>"
 		}
 	]
 }
