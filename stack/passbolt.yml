@@ -39,27 +39,23 @@ services:
       PASSBOLT_PLUGINS_JWT_AUTHENTICATION_ENABLED: true
       PASSBOLT_PLUGINS_MOBILE_ENABLED: true
     hostname: passbolt
-    image: passbolt/passbolt:latest-ce
+    image: passbolt/passbolt:latest-ce-non-root
     networks:
       - passbolt_default
     ports:
     #  - 80:80
-      - ${PASSBOLT_PORT}:443
+      - ${PASSBOLT_PORT}:4433
     restart: unless-stopped
     volumes:
-      - /portainer/Files/AppData/Config/passbolt/certs:/etc/ssl/certs
-      #- /portainer/Files/AppData/Config/passbolt/certs/certificate.crt:/etc/ssl/certs/certificate.crt
-      #- /portainer/Files/AppData/Config/passbolt/certs/certificate.key:/etc/ssl/certs/certificate.key
-      #- /portainer/Files/AppData/Config/passbolt/certs/key.pem:/etc/ssl/certs/key.pem:ro
-      #- /portainer/Files/AppData/Config/passbolt/certs/cert.pem:/etc/ssl/certs/cert.pem:ro
-      - gpg:/etc/passbolt/gpg
-      - jwt:/etc/passbolt/jwt
+      - /portainer/Files/AppData/Config/passbolt/certs:/etc/passbolt/certs
+      - /portainer/Files/AppData/Config/passbolt/gpg:/etc/passbolt/gpg
+      - /portainer/Files/AppData/Config/passbolt/jwt:/etc/passbolt/jwt
 
 networks:
   passbolt_default:
       name: passbolt
       driver: bridge
   
-volumes:
-  gpg:
-  jwt:
+#volumes:
+#  gpg:
+#  jwt:
