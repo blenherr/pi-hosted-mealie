@@ -42,4 +42,4 @@ https://passbolt.local/setup/start/9fb7180d-b44b-41bf-bf77-8c5ab23e8cbc/966ce549
 ```
 Copy and paste the url above in browser. Proceed with `Welcome to Passbolt, please select a passphrase!`.
 
-You may have to install Passbolt Add-on.
+You may have to install Passbolt browser add-on.
