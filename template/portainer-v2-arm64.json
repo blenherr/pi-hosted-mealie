@@ -10,47 +10,56 @@
 			"env": [
 				{
 					"default": "1000",
-					"label": "MariaDB PUID",
+					"description": "Enter your user's PUID here",
+					"label": "PUID",
 					"name": "PUID"
 				},
 				{
 					"default": "1000",
-					"label": "MariaDB PGID",
+					"description": "Enter your user's PGID here",
+					"label": "PGID",
 					"name": "PGID"
 				},
 				{
 					"default": "Europe/Zurich",
-					"label": "MariaDB timezone",
+					"description": "Enter your time zone here (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)",
+					"label": "TZ",
 					"name": "TZ"
 				},
 				{
 					"default": "",
-					"label": "MariaDB root password",
+					"description": "Enter your MariaDB root password here",
+					"label": "MYSQL_ROOT_PASSWORD",
 					"name": "MYSQL_ROOT_PASSWORD"
 				},
 				{
 					"default": "passbolt",
-					"label": "Passbolt database name",
+					"description": "Enter your Passbolt database name here",
+					"label": "MYSQL_DATABASE",
 					"name": "MYSQL_DATABASE"
 				},
 				{
 					"default": "passbolt",
-					"label": "Passbolt database user",
+					"description": "Enter your Passbolt database user here",
+					"label": "MYSQL_USER",
 					"name": "MYSQL_USER"
 				},
 				{
 					"default": "",
-					"label": "Passbolt database password",
+					"description": "Enter your Passbolt database password here",
+					"label": "MYSQL_PASSWORD",
 					"name": "MYSQL_PASSWORD"
 				},
 				{
 					"default": "https://passbolt.local",
-					"label": "Passbolt full HTTPS base URL",
+					"description": "Enter your full Passbolt https base URL here (Including port if different from 443)",
+					"label": "APP_FULL_BASE_URL",
 					"name": "APP_FULL_BASE_URL"
 				},
 				{
 					"default": "443",
-					"label": "Passbolt HTTPS port",
+					"description": "Enter your Passbolt https port here",
+					"label": "PASSBOLT_PORT",
 					"name": "PASSBOLT_PORT"
 				}
 			],
