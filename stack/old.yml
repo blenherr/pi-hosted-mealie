@@ -1,0 +1,65 @@
+version: "3.9"
+services:
+  passbolt-db:
+    container_name: passbolt-db
+    environment:
+      PUID: ${PUID}
+      PGID: ${PGID}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    hostname: passbolt-db
+    image: linuxserver/mariadb:arm64v8-latest
+    networks:
+      - passbolt_default
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/passbolt/db:/config
+
+  passbolt:
+    container_name: passbolt
+    command:
+      [
+        "/usr/bin/wait-for.sh",
+        "-t",
+        "0",
+        "passbolt-db:3306",
+        "--",
+        "/docker-entrypoint.sh",
+      ]
+    depends_on:
+      - passbolt-db
+    environment:
+      APP_FULL_BASE_URL: ${APP_FULL_BASE_URL}
+      DATASOURCES_DEFAULT_HOST: passbolt-db
+      DATASOURCES_DEFAULT_USERNAME: ${MYSQL_USER}
+      DATASOURCES_DEFAULT_PASSWORD: ${MYSQL_PASSWORD}
+      DATASOURCES_DEFAULT_DATABASE: ${MYSQL_DATABASE}
+      PASSBOLT_PLUGINS_JWT_AUTHENTICATION_ENABLED: true
+      PASSBOLT_PLUGINS_MOBILE_ENABLED: true
+    hostname: passbolt
+    image: passbolt/passbolt:latest-ce
+    networks:
+      - passbolt_default
+    ports:
+    #  - 80:80
+      - ${PASSBOLT_PORT}:443
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Config/passbolt/certs:/etc/ssl/certs
+      #- /portainer/Files/AppData/Config/passbolt/certs/certificate.crt:/etc/ssl/certs/certificate.crt
+      #- /portainer/Files/AppData/Config/passbolt/certs/certificate.key:/etc/ssl/certs/certificate.key
+      #- /portainer/Files/AppData/Config/passbolt/certs/key.pem:/etc/ssl/certs/key.pem:ro
+      #- /portainer/Files/AppData/Config/passbolt/certs/cert.pem:/etc/ssl/certs/cert.pem:ro
+      - gpg:/etc/passbolt/gpg
+      - jwt:/etc/passbolt/jwt
+
+networks:
+  passbolt_default:
+      name: passbolt
+      driver: bridge
+  
+volumes:
+  gpg:
+  jwt:
