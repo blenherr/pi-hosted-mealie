@@ -32,8 +32,6 @@ Of course, replace -subj values with your own. It is important to set your passb
 
 You can use an IP address instead of a domain name for your self-signed certificate. If you do that, replace DNS with IP in subjectAltName. `Example: IP:127.0.0.1`
 
-
-
 ## Install the App Template.
 
 Goto App Templates and click on "Passbolt". Change Configuration to your needs:
@@ -72,5 +70,11 @@ Copy and paste the url above in browser. Proceed with `Welcome to Passbolt, plea
 
 You may have to install Passbolt browser add-on.
 
-## After admin user activation
+## Past-Installation Steps
 Configure the email server by clicking on administration
+
+
+## Acknowledgment
+- [iOS / Android Mobile FAQ](https://help.passbolt.com/faq/hosting/mobile-faq)
+- [Docker passbolt installation](https://help.passbolt.com/hosting/install/ce/docker)
+- [Troubleshoot SSL](https://help.passbolt.com/faq/hosting/troubleshoot-ssl)
