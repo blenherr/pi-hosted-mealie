@@ -100,7 +100,7 @@
 				},
 				{
 					"default": "true",
-					"description": "Enter set TLS",
+					"description": "Enter set TLS here",
 					"label": "EMAIL_TLS",
 					"name": "EMAIL_TLS"
 				}
