@@ -51,16 +51,16 @@
 					"name": "MYSQL_PASSWORD"
 				},
 				{
-					"default": "https://passbolt.local",
-					"description": "Enter your full Passbolt https base URL here. Including port if different from 443",
-					"label": "APP_FULL_BASE_URL",
-					"name": "APP_FULL_BASE_URL"
-				},
-				{
 					"default": "443",
 					"description": "Enter your Passbolt https port here",
 					"label": "PASSBOLT_PORT",
 					"name": "PASSBOLT_PORT"
+				},
+				{
+					"default": "https://passbolt.local",
+					"description": "Enter your full Passbolt https base URL here. Including port if different from 443",
+					"label": "PASSBOLT_URL",
+					"name": "PASSBOLT_URL"
 				},
 				{
 					"default": "Passbolt",
