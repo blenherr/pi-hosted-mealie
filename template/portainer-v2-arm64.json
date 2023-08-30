@@ -61,6 +61,48 @@
 					"description": "Enter your Passbolt https port here",
 					"label": "PASSBOLT_PORT",
 					"name": "PASSBOLT_PORT"
+				},
+				{
+					"default": "Passbolt",
+					"description": "Enter your from email name",
+					"label": "EMAIL_FROM_NAME",
+					"name": "EMAIL_FROM_NAME"
+				},
+				{
+					"default": "",
+					"description": "Enter your from email address (Mostly same as username)",
+					"label": "EMAIL_FROM_ADDRESS",
+					"name": "EMAIL_FROM_ADDRESS"
+				},
+				{
+					"default": "smtp.gmail.com",
+					"description": "Enter your email smtp server here",
+					"label": "EMAIL_SMTP_SERVER",
+					"name": "EMAIL_SMTP_SERVER"
+				},
+				{
+					"default": "465",
+					"description": "Enter your email smtp port here",
+					"label": "EMAIL_SMTP_PORT",
+					"name": "EMAIL_SMTP_PORT"
+				},
+				{
+					"default": "",
+					"description": "Enter your email username here",
+					"label": "EMAIL_USERNAME",
+					"name": "EMAIL_USERNAME"
+				},
+				{
+					"default": "",
+					"description": "Enter your email password here",
+					"label": "EMAIL_PASSWORD",
+					"name": "EMAIL_PASSWORD"
+				},
+				{
+					"default": "true",
+					"description": "Enter set TLS",
+					"label": "EMAIL_TLS",
+					"name": "EMAIL_TLS"
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-passbolt/master/images/passbolt.png",
