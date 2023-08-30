@@ -10,8 +10,8 @@
 
 Create directorys:
 ```
-sudo mkdir /portainer/Files/AppData/Config/passbolt \
-mkdir /portainer/Files/AppData/Config/passbolt/certs
+sudo mkdir /portainer/Files/AppData/Config/passbolt && \
+sudo mkdir /portainer/Files/AppData/Config/passbolt/certs
 ```
 
 Generate a proper Self-signed certificate:
