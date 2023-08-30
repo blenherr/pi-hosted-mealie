@@ -70,7 +70,7 @@
 				},
 				{
 					"default": "",
-					"description": "Enter your from email address (Mostly same as username)",
+					"description": "Enter your from email address",
 					"label": "EMAIL_FROM_ADDRESS",
 					"name": "EMAIL_FROM_ADDRESS"
 				},
