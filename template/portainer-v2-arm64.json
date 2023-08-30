@@ -81,7 +81,7 @@
 					"name": "EMAIL_SMTP_SERVER"
 				},
 				{
-					"default": "465",
+					"default": "587",
 					"description": "Enter your email smtp port here",
 					"label": "EMAIL_SMTP_PORT",
 					"name": "EMAIL_SMTP_PORT"
