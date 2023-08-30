@@ -42,15 +42,26 @@ Goto App Templates and click on "Passbolt". Change Configuration to your needs:
 - **MYSQL_DATABASE** (Enter your Passbolt database name here)
 - **MYSQL_USER** (Enter your Passbolt database user here)
 - **MYSQL_PASSWORD** (Enter your Passbolt database password here)
-- **APP_FULL_BASE_URL** (Enter your full Passbolt https base URL here. Including port if different from 443)
 - **PASSBOLT_PORT** (Enter your Passbolt https port here)
+- **PASSBOLT_URL** (Enter your full Passbolt https base URL here. Including port if different from 443)
+- **EMAIL_FROM_NAME** (Enter your from email name)
+- **EMAIL_FROM_ADDRESS** (Enter your from email address)
+- **EMAIL_SMTP_SERVER** (Enter your email smtp server here)
+- **EMAIL_SMTP_PORT** (Enter your email smtp port here)
+- **EMAIL_USERNAME** (Enter your email username here)
+- **EMAIL_PASSWORD** (Enter your email password here)
+- **EMAIL_TLS** (Enter set TLS here)
 
-## Setup Passbolt admin user
+# Setup first admin user
 
-Go into Passbolt container console.
-Type in the code below and change it to your needs:
+Go into Passbolt container console. Type in the code below and change it to your needs:
 ```
-su -s /bin/bash -c "./bin/cake passbolt register_user -u youremail@mail.net -f yourfirstname -l yourlastname -r admin" www-data
+su -s /bin/bash -c "./bin/cake \
+    passbolt register_user \
+    -u youremail@mail.net \
+    -f yourfirstname \
+    -l yourlastname \
+    -r admin" www-data
 ```
 After that you get something like this:
 ```
@@ -66,11 +77,16 @@ User saved successfully.
 To start registration follow the link provided in your mailbox or here: 
 https://passbolt.local/setup/start/9fb7180d-b44b-41bf-bf77-8c5ab23e8cbc/966ce549-18ec-4b12-9171-9a1bb2f1a393
 ```
-Copy and paste the url above in browser. Proceed with `Welcome to Passbolt, please select a passphrase!`.
+If you configured your smtp server right you should get a email. Click on `get starded`
+
+If you do not get an email have a look into your spam folder and/or copy and paste the url above in browser.
+
+Proceed with `Welcome to Passbolt, please select a passphrase!`.
 
 You may have to install Passbolt browser add-on.
 
-## Past-Installation Steps
+# Setup Android Mobile App
+
 Configure the email server by clicking on administration
 
 
