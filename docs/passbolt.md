@@ -21,7 +21,7 @@ sudo mkdir /portainer/Files/AppData/Config/passbolt && \
 sudo mkdir /portainer/Files/AppData/Config/passbolt/certs
 ```
 
-Generate a proper Self-signed certificate:
+Generate a proper Self-signed certificate. Type in the code below and change it to your needs:
 ```
 sudo openssl req -x509 \
     -newkey rsa:4096 \
@@ -84,21 +84,21 @@ User saved successfully.
 To start registration follow the link provided in your mailbox or here: 
 https://passbolt.local/setup/start/9fb7180d-b44b-41bf-bf77-8c5ab23e8cbc/966ce549-18ec-4b12-9171-9a1bb2f1a393
 ```
-If you configured your smtp server right you should get a email. Click on `get starded`
+If you previously configured your smtp server right you should get an email. Click on `get starded`
 
 If you do not get an email have a look into your spam folder and/or copy and paste the url above in browser.
 
-Proceed with `Welcome to Passbolt, please select a passphrase!`.
+You may have to accept self signed certificate and/or install Passbolt browser add-on.
 
-You may have to install Passbolt browser add-on.
+Proceed with `Welcome to Passbolt, please select a passphrase!`.
 
 # Setup Android Mobile App
 
 ## Import certificate on mobile application
-- [Docker passbolt installation](https://help.passbolt.com/hosting/install/ce/docker)
+[How to import SSL certificate on mobile application](https://help.passbolt.com/faq/hosting/how-to-import-ssl-certificate-on-mobile)
 
 ## Transfer your account key
-Go to `your user > Mobile Transfer` and follow the steps.
+In your desktop browser go to log in to Passbolt, navigate to `your user > Mobile Transfer` and follow the steps.
 
 
 # Acknowledgment
