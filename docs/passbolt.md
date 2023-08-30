@@ -4,7 +4,7 @@
 - [Installation](#installation)
 - [Setup first admin user](#setup-first-admin-user)
 - [Setup Android Mobile App](#setup-android-mobile-app)
-- [Acknowledgment](#acknowledgment)
+- [Acknowledgment / Troubleshoot](#acknowledgment--troubleshoot)
 
 
 ## Introduction
