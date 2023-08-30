@@ -1,6 +1,13 @@
 # Install and setup instructions for Passbolt
 
-## Introduction
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Setup first admin user](#setup-first-admin-user)
+- [Setup Android Mobile App](#setup-android-mobile-app)
+- [Acknowledgment](#acknowledgment)
+
+
+# Introduction
 
 [Passbolt](https://www.passbolt.com) is an open source password manager with [MariaDB](https://mariadb.com) backend. 
 
@@ -87,10 +94,15 @@ You may have to install Passbolt browser add-on.
 
 # Setup Android Mobile App
 
-Configure the email server by clicking on administration
-
-
-## Acknowledgment
-- [iOS / Android Mobile FAQ](https://help.passbolt.com/faq/hosting/mobile-faq)
+## Import certificate on mobile application
 - [Docker passbolt installation](https://help.passbolt.com/hosting/install/ce/docker)
+
+## Transfer your account key
+Go to `your user > Mobile Transfer` and follow the steps.
+
+
+# Acknowledgment
+- [Docker passbolt installation](https://help.passbolt.com/hosting/install/ce/docker)
+- [How to import SSL certificate on mobile application](https://help.passbolt.com/faq/hosting/how-to-import-ssl-certificate-on-mobile)
+- [iOS / Android Mobile FAQ](https://help.passbolt.com/faq/hosting/mobile-faq)
 - [Troubleshoot SSL](https://help.passbolt.com/faq/hosting/troubleshoot-ssl)
