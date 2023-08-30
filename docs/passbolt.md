@@ -103,6 +103,6 @@ Go to `your user > Mobile Transfer` and follow the steps.
 
 # Acknowledgment
 - [Docker passbolt installation](https://help.passbolt.com/hosting/install/ce/docker)
-- [How to import SSL certificate on mobile application](https://help.passbolt.com/faq/hosting/how-to-import-ssl-certificate-on-mobile)
 - [iOS / Android Mobile FAQ](https://help.passbolt.com/faq/hosting/mobile-faq)
+- [How to import SSL certificate on mobile application](https://help.passbolt.com/faq/hosting/how-to-import-ssl-certificate-on-mobile)
 - [Troubleshoot SSL](https://help.passbolt.com/faq/hosting/troubleshoot-ssl)
