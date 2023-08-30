@@ -104,7 +104,7 @@ Proceed with `Welcome to Passbolt, please select a passphrase!`.
 In your desktop browser go to log in to Passbolt, navigate to `your user > Mobile Transfer` and follow the steps.
 
 
-## Acknowledgment
+## Acknowledgment / Troubleshoot
 - [Docker passbolt installation](https://help.passbolt.com/hosting/install/ce/docker)
 - [iOS / Android Mobile FAQ](https://help.passbolt.com/faq/hosting/mobile-faq)
 - [How to import SSL certificate on mobile application](https://help.passbolt.com/faq/hosting/how-to-import-ssl-certificate-on-mobile)
