@@ -6,6 +6,34 @@
 
 # Installation
 
+## Pre-Installation Steps
+
+Create directorys:
+```
+sudo mkdir /portainer/Files/AppData/Config/passbolt \
+mkdir /portainer/Files/AppData/Config/passbolt/certs
+```
+
+Generate a proper Self-signed certificate:
+```
+sudo openssl req -x509 \
+    -newkey rsa:4096 \
+    -days 120 \
+    -subj "/C=LU/ST=Luxembourg/L=Esch-Sur-Alzette/O=Passbolt SA/OU=Passbolt IT Team/CN=passbolt.domain.tld/" \
+    -nodes \
+    -addext "subjectAltName = DNS:passbolt.domain.tld" \
+    -keyout /portainer/Files/AppData/Config/passbolt/certs/key.pem \
+    -out /portainer/Files/AppData/Config/passbolt/certs/cert.pem
+```
+
+This command will output two files: certificate.key and certificate.crt.
+
+Of course, replace -subj values with your own. It is important to set your passbolt FQDN in both CN and subjectAltName.
+
+You can use an IP address instead of a domain name for your self-signed certificate. If you do that, replace DNS with IP in subjectAltName. `Example: IP:127.0.0.1`
+
+
+
 ## Install the App Template.
 
 Goto App Templates and click on "Passbolt". Change Configuration to your needs:
