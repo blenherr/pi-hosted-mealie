@@ -84,9 +84,12 @@ User saved successfully.
 To start registration follow the link provided in your mailbox or here: 
 https://passbolt.local/setup/start/9fb7180d-b44b-41bf-bf77-8c5ab23e8cbc/966ce549-18ec-4b12-9171-9a1bb2f1a393
 ```
-If you previously configured your smtp server right you should get an email. Open it and click on `get starded`.
+Now you should get an email. Open it and click on `get starded`.
 
-If you do not get an email have a look into your spam folder and/or copy and paste the url above in browser.
+If you do not get an email:
+- Double check configuration above
+- Have a look into your spam folder
+- Copy the url above and paste it in browser
 
 You may have to accept self signed certificate and/or install Passbolt browser add-on.
 
