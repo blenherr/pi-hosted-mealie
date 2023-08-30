@@ -106,6 +106,7 @@ In your desktop browser go to log in to Passbolt, navigate to `your user > Mobil
 
 ## Acknowledgment / Troubleshoot
 - [Docker passbolt installation](https://help.passbolt.com/hosting/install/ce/docker)
+- [https://github.com/passbolt/passbolt_docker](https://github.com/passbolt/passbolt_docker)
 - [iOS / Android Mobile FAQ](https://help.passbolt.com/faq/hosting/mobile-faq)
 - [How to import SSL certificate on mobile application](https://help.passbolt.com/faq/hosting/how-to-import-ssl-certificate-on-mobile)
 - [Troubleshoot SSL](https://help.passbolt.com/faq/hosting/troubleshoot-ssl)
