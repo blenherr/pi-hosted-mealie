@@ -7,13 +7,13 @@
 - [Acknowledgment](#acknowledgment)
 
 
-# Introduction
+## Introduction
 
 [Passbolt](https://www.passbolt.com) is an open source password manager with [MariaDB](https://mariadb.com) backend. 
 
-# Installation
+## Installation
 
-## Pre-Installation Steps
+### Pre-Installation Steps
 
 Create directorys:
 ```
@@ -39,7 +39,7 @@ Of course, replace -subj values with your own. It is important to set your passb
 
 You can use an IP address instead of a domain name for your self-signed certificate. If you do that, replace DNS with IP in subjectAltName. `Example: IP:127.0.0.1`
 
-## Install the App Template.
+### Install the App Template.
 
 Goto App Templates and click on "Passbolt". Change Configuration to your needs:
 - **PUID** (Enter your user's PUID here)
@@ -59,7 +59,7 @@ Goto App Templates and click on "Passbolt". Change Configuration to your needs:
 - **EMAIL_PASSWORD** (Enter your email password here)
 - **EMAIL_TLS** (Enter set TLS here)
 
-# Setup first admin user
+## Setup first admin user
 
 Go into Passbolt container console. Type in the code below and change it to your needs:
 ```
@@ -92,16 +92,16 @@ You may have to accept self signed certificate and/or install Passbolt browser a
 
 Proceed with `Welcome to Passbolt, please select a passphrase!`.
 
-# Setup Android Mobile App
+## Setup Android Mobile App
 
-## Import certificate on mobile application
+### Import certificate on mobile application
 [How to import SSL certificate on mobile application](https://help.passbolt.com/faq/hosting/how-to-import-ssl-certificate-on-mobile)
 
-## Transfer your account key
+### Transfer your account key
 In your desktop browser go to log in to Passbolt, navigate to `your user > Mobile Transfer` and follow the steps.
 
 
-# Acknowledgment
+## Acknowledgment
 - [Docker passbolt installation](https://help.passbolt.com/hosting/install/ce/docker)
 - [iOS / Android Mobile FAQ](https://help.passbolt.com/faq/hosting/mobile-faq)
 - [How to import SSL certificate on mobile application](https://help.passbolt.com/faq/hosting/how-to-import-ssl-certificate-on-mobile)
