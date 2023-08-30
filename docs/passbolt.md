@@ -33,7 +33,7 @@ sudo openssl req -x509 \
     -out /portainer/Files/AppData/Config/passbolt/certs/cert.pem
 ```
 
-This command will output two files: certificate.key and certificate.crt.
+This command will output two files: **key.pem** and **cert.pem**.
 
 Of course, replace -subj values with your own. It is important to set your passbolt FQDN in both CN and subjectAltName.
 
