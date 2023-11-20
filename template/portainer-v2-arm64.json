@@ -105,16 +105,29 @@
 					"name": "EMAIL_TLS"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-passbolt/master/images/passbolt.png",
-			"name": "Passbolt",
+			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-passbolt/master/images/scrutiny-logo-dark.png",
+			"name": "scrutiny",
 			"platform": "linux",
-			"repository": {
-				"stackfile": "stack/passbolt.yml",
-				"url": "https://github.com/blenherr/pi-hosted-passbolt"
-			},
+			"ports": [
+				"8056:8080/tcp"
+			],
 			"restart_policy": "unless-stopped",
 			"title": "Passbolt",
 			"type": 3,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/scrutiny/config",
+					"container": "/opt/scrutiny/config"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/scrutiny/influxdb",
+					"container": "/opt/scrutiny/influxdb"
+				},
+				{
+					"bind": "/run/udev",
+					"container": "/run/udev"
+				}
+			]
 			"note": "<p><b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md\" target=\"_blank\">https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md\" target=\"_blank\">https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md</a></p><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md\" target=\"_blank\">passbolt.md</a></h3><p><br><br></p>"
 		}
 	]
