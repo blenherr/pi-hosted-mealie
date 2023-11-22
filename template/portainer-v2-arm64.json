@@ -7,29 +7,15 @@
 				"Tools"
 			],
 			"description": "Passbolt is a free and open source password manager designed for collaboration. With Passbolt you can securely generate, store, manage and monitor your team credentials. Get access to all of your logins and passwords from multiple browsers or even your mobile phone.",
-			"env": [
-				{
-					"default": "1000",
-					"description": "Enter your user's PUID here",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "1000",
-					"description": "Enter your user's PGID here",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-passbolt/master/images/scrutiny-logo-dark.png",
+			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-scrutiny/master/images/scrutiny-logo-dark.png",
 			"name": "scrutiny",
 			"platform": "linux",
 			"ports": [
-				"8056:8080/tcp"
+				"8080:8080/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Scrutiny",
-			"type": 3,
+			"type": 1,
 			"volumes": [
 				{
 					"bind": "/portainer/Files/AppData/Config/scrutiny/config",
