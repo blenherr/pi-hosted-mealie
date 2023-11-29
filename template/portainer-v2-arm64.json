@@ -41,7 +41,7 @@
 					"name": "TZ"
 				},
 				{
-					"default": "https://mealie.yourdomain.com",
+					"default": "https://mealie.yourdomain.com:9925",
 					"label": "BASE_URL",
 					"name": "BASE_URL"
 				},
