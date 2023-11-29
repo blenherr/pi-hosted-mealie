@@ -30,7 +30,7 @@
 					"container": "/run/udev"
 				}
 			],
-			"note": "<p><b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md\" target=\"_blank\">https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md\" target=\"_blank\">https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md</a></p><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/blenherr/pi-hosted-passbolt/blob/master/docs/passbolt.md\" target=\"_blank\">passbolt.md</a></h3><p><br><br></p>"
+			"note": "<p><b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/AnalogJ/scrutiny\" target=\"_blank\">https://github.com/AnalogJ/scrutiny</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/AnalogJ/scrutiny\" target=\"_blank\">https://github.com/AnalogJ/scrutiny</a></p><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/blenherr/pi-hosted-scrutiny/blob/master/docs/scrutiny.md\" target=\"_blank\">scrutiny.md</a></h3><p><br><br></p>"
 		}
 	]
 }
