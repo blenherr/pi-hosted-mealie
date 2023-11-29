@@ -8,7 +8,7 @@
 
 ## Introduction
 
-![Scrutiny](https://github.com/AnalogJ/scrutiny) is an WebUI for smartd S.M.A.R.T monitoring with ![InfluxDB](https://www.influxdata.com) backend. 
+[Scrutiny](https://github.com/AnalogJ/scrutiny) is an WebUI for smartd S.M.A.R.T monitoring with [InfluxDB](https://www.influxdata.com) backend. 
 
 
 ## Installation
