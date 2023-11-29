@@ -59,7 +59,7 @@
 			"image": "ghcr.io/mealie-recipes/mealie:v1.0.0-RC1.1",
 			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mealie.png",
 			"name": "mealie",
-			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hay-kot.github.io/mealie/\" target=\"_blank\">https://hay-kot.github.io/mealie/</a><br><b>Official Docker Documentation: </b><a href=\"https://hay-kot.github.io/mealie/documentation/getting-started/install/\" target=\"_blank\">https://hay-kot.github.io/mealie/documentation/getting-started/install/</a><br><br><br>Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available <a href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'>here</a>.",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://mealie.io\" target=\"_blank\">https://mealie.io</a><br><b>Official Docker Documentation: </b><a href=\"https://nightly.mealie.io/documentation/getting-started/installation/installation-checklist/\" target=\"_blank\">https://nightly.mealie.io/documentation/getting-started/installation/installation-checklist/</a><br><br><br>Default Credentials: Username: changeme@email.com Password: MyPassword",
 			"platform": "linux",
 			"ports": [
 				"9925:9000/tcp"
