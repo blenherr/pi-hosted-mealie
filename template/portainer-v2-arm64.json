@@ -7,6 +7,7 @@
 				"Tools"
 			],
 			"description": "WebUI for smartd S.M.A.R.T monitoring",
+			"image": "ghcr.io/analogj/scrutiny:master-omnibus",
 			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-scrutiny/master/images/scrutiny-logo-dark.png",
 			"name": "scrutiny",
 			"platform": "linux",
