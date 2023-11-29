@@ -6,32 +6,73 @@
 				"Other",
 				"Tools"
 			],
-			"description": "WebUI for smartd S.M.A.R.T monitoring",
-			"image": "ghcr.io/analogj/scrutiny:master-omnibus",
-			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-scrutiny/master/images/scrutiny-logo-dark.png",
-			"name": "scrutiny",
+			"description": "Mealie is a self hosted recipe manager and meal planner for the whole family.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "1000",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"default": "true",
+					"label": "ALLOW_SIGNUP",
+					"name": "ALLOW_SIGNUP",
+					"select": [
+						{
+							"text": "Yes",
+							"value": true,
+							"default": true
+						},
+						{
+							"text": "No",
+							"value": false							
+						}
+					]
+
+				},
+				{
+					"default": "America/Anchorage",
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "8",
+					"label": "MAX_WORKERS",
+					"name": "MAX_WORKERS"
+				},
+				{
+					"default": "2",
+					"label": "WEB_CONCURRENCY",
+					"name": "WEB_CONCURRENCY"
+				},
+				{
+					"default": "https://mealie.yourdomain.com",
+					"label": "BASE_URL",
+					"name": "BASE_URL"
+				}
+			],
+			"image": "ghcr.io/mealie-recipes/mealie:v1.0.0-RC1.1",
+			"logo": "https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/images/mealie.png",
+			"name": "mealie",
+			"note": "<b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://hay-kot.github.io/mealie/\" target=\"_blank\">https://hay-kot.github.io/mealie/</a><br><b>Official Docker Documentation: </b><a href=\"https://hay-kot.github.io/mealie/documentation/getting-started/install/\" target=\"_blank\">https://hay-kot.github.io/mealie/documentation/getting-started/install/</a><br><br><br>Default Credentials: Username: changeme@email.com Password: MyPassword. Documentation is Available <a href='https://hay-kot.github.io/mealie/documentation/getting-started/install/'>here</a>.",
 			"platform": "linux",
 			"ports": [
-				"8080:8080/tcp"
+				"9925:9000/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "scrutiny",
+			"title": "Mealie",
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/scrutiny/config",
-					"container": "/opt/scrutiny/config"
-				},
-				{
-					"bind": "/portainer/Files/AppData/Config/scrutiny/influxdb",
-					"container": "/opt/scrutiny/influxdb"
-				},
-				{
-					"bind": "/run/udev",
-					"container": "/run/udev"
+					"bind": "/portainer/Files/AppData/Config/mealie",
+					"container": "/app/data"
 				}
-			],
-			"note": "<p><b>Template created by Pi-Hosted Series</b><br><b>Check our Github page: <a href=\"https://github.com/pi-hosted/pi-hosted\" target=\"_blank\">https://github.com/pi-hosted/pi-hosted</a></b><br><br><b>Official Webpage: </b><a href=\"https://github.com/AnalogJ/scrutiny\" target=\"_blank\">https://github.com/AnalogJ/scrutiny</a><br><b>Official Docker Documentation: </b><a href=\"https://github.com/AnalogJ/scrutiny\" target=\"_blank\">https://github.com/AnalogJ/scrutiny</a></p><h3><b>Pi-Hosted dedicated documentation: </b><a href=\"https://github.com/blenherr/pi-hosted-scrutiny/blob/master/docs/scrutiny.md\" target=\"_blank\">scrutiny.md</a></h3><p><br><br></p>"
+			]
 		}
 	]
 }
