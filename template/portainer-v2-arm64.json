@@ -6,7 +6,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "Passbolt is a free and open source password manager designed for collaboration. With Passbolt you can securely generate, store, manage and monitor your team credentials. Get access to all of your logins and passwords from multiple browsers or even your mobile phone.",
+			"description": "WebUI for smartd S.M.A.R.T monitoring",
 			"logo": "https://raw.githubusercontent.com/blenherr/pi-hosted-scrutiny/master/images/scrutiny-logo-dark.png",
 			"name": "scrutiny",
 			"platform": "linux",
