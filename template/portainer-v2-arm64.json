@@ -41,19 +41,44 @@
 					"name": "TZ"
 				},
 				{
-					"default": "8",
-					"label": "MAX_WORKERS",
-					"name": "MAX_WORKERS"
-				},
-				{
-					"default": "2",
-					"label": "WEB_CONCURRENCY",
-					"name": "WEB_CONCURRENCY"
-				},
-				{
 					"default": "https://mealie.yourdomain.com",
 					"label": "BASE_URL",
 					"name": "BASE_URL"
+				},
+				{
+					"default": "smtp.gmail.com",
+					"label": "SMTP_HOST",
+					"name": "SMTP_HOST"
+				},
+				{
+					"default": "587",
+					"label": "SMTP_PORT",
+					"name": "SMTP_PORT"
+				},
+				{
+					"default": "Mealie",
+					"label": "SMTP_FROM_NAME",
+					"name": "SMTP_FROM_NAME"
+				},
+				{
+					"default": "your_mail_address",
+					"label": "SMTP_FROM_EMAIL",
+					"name": "SMTP_FROM_EMAIL"
+				},
+				{
+					"default": "TLS",
+					"label": "SMTP_AUTH_STRATEGY",
+					"name": "SMTP_AUTH_STRATEGY"
+				},
+				{
+					"default": "your_user",
+					"label": "SMTP_USER",
+					"name": "SMTP_USER"
+				},
+				{
+					"default": "your_password",
+					"label": "SMTP_PASSWORD",
+					"name": "SMTP_PASSWORD"
 				}
 			],
 			"image": "ghcr.io/mealie-recipes/mealie:v1.0.0-RC1.1",
